@@ -39,7 +39,7 @@ let builder = IstorageBuilder().setApiKey(ApiKey: "ApiKey").build()
 ## upload
 
 ```ruby
-    builder.upLoad(imageURL: ## imageURL , success: { (data) in
+    builder.upLoad(imageURL: imageURL , success: { (data) in
                 print(data!)
             }) { (data,response, error) in
                 print(data!)
