@@ -19,6 +19,33 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MyLib'
 ```
+# Usage
+
+```ruby
+let builder = IstorageBuilder().setApiKey(ApiKey: "ApiKey").build()
+```
+
+## GetFile 
+
+```ruby
+  builder.getFile(key: fileKey, success: { (data) in
+            //thành công
+            print(data!)
+        }) { (data, response, error) in
+            //error
+        }
+```
+
+## upload
+
+```ruby
+    builder.upLoad(imageURL: ## imageURL , success: { (data) in
+                print(data!)
+            }) { (data,response, error) in
+                print(data!)
+                print(response!)
+    }
+```
 
 ## Author
 
